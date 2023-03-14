@@ -1,0 +1,13 @@
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required [(ngModel)]="name">
+  
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required [(ngModel)]="number">
+  
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" placeholder="Enter your address" required [(ngModel)]="address"></textarea>
+  
+    <button type="submit" (click)="submitForm()">Submit</button>
+  </form>
+  

@@ -1,0 +1,103 @@
+<!-- <div class="container">
+    <h2 class="mt-5 mb-4">Angular Stripe Checkout Example</h2>
+    <div class="col-md-5 mb-2">
+      <button (click)="makePayment()" class="btn btn-danger btn-block">Pay {{price}}</button>
+    </div> -->
+ <div class="wrapper" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap: 20px;">
+      <div class="card">
+        <img src="{{cakeImage}}" />
+        <div class="info">
+          <h1>{{ cakeName}}</h1>     
+          <button (click)="makePayment()" class="btn btn-danger btn-block">PAY{{cakePrice|currency:'INR'}}</button>
+        </div>
+      </div>
+    </div> 
+<!-- 
+    <div class="payment-container">
+      <h2>Complete Your Purchase</h2>
+      <div class="cake-details">
+        <img [src]="cakeImage" alt="Cake Image" />
+        <div class="cake-info">
+          <h3>{{ cakeName }}</h3>
+          <p>Price: {{ cakePrice }} USD</p>
+        </div>
+      </div>
+      <form (submit)="makePayment()">
+        <label>
+          ENTER YOUR NAME:
+          <input type="text" name="customer" required>
+        </label>
+        <label>
+          Card Number:
+          <input type="textfield" name="cardNumber" required>
+        </label>
+        <div class="expiration-cvv">
+          <label>
+            Expiration Date:
+            <input type="text" name="expirationDate" required>
+          </label>
+          <label>
+            CVV:
+            <input type="text" name="cvv" required>
+          </label>
+        </div>
+        <button type="submit"  (click)="makePayment()">Pay {{ cakePrice }} USD</button>
+      </form>
+    </div> -->
+    <!-- <form (submit)="submitForm()">
+      <label>
+        Name:
+        <input type="text" name="name" required [(ngModel)]="name">
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" required [(ngModel)]="email">
+      </label>
+      <label>
+        Address:
+        <textarea name="address" required [(ngModel)]="address"></textarea>
+      </label>
+      <label>
+        Phone Number:
+        <input type="tel" name="phone" required [(ngModel)]="phone">
+      </label>
+      <button type="submit">Submit</button>
+      <button type="submit"  (click)="makePayment()">Pay {{ cakePrice }} USD</button>
+    </form>  -->
+<!-- 
+    <div class="payment-container">
+      <h2>Complete Your Purchase</h2>
+      <div class="cake-details">
+        <img [src]="cakeImage" alt="Cake Image" />
+        <div class="cake-info">
+          <h3>{{ cakeName }}</h3>
+          <p>Price: {{ cakePrice }} USD</p>
+        </div>
+      </div>
+      <form (submit)="submitForm()">
+        <label>
+          Name:
+          <input type="text" name="name" required [(ngModel)]="name">
+        </label>
+        <label>
+          Email:
+          <input type="email" name="email" required [(ngModel)]="email">
+        </label>
+        <label>
+          Address:
+          <textarea name="address" required [(ngModel)]="address"></textarea>
+        </label>
+        <label>
+          Phone Number:
+          <input type="tel" name="phone" required [(ngModel)]="phone">
+        </label>
+        <input type="hidden" name="cakeName" value="{{cakeName}}">
+        <input type="hidden" name="cakePrice" value="{{cakePrice}}">
+        <div><button type="submit"  (click)="submitForm()">  Add address</button></div><br>
+        <div>
+        <button type="submit"  (click)="makePayment()"> Pay {{ cakePrice }} USD</button></div>
+      </form>
+    </div>
+    
+     
+      -->

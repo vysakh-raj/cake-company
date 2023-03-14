@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "miniproject-62de5": {
+      "hosting": {
+        "course": [
+          "miniproject-62de5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "miniproject-62de5"
+  }
+}

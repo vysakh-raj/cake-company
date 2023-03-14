@@ -1,0 +1,50 @@
+/* .group {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+}
+
+.item {
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+  
+
+
+ */
+ .group {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.item {
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin-right: 10px;
+  transition: transform 0.2s ease-out;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
